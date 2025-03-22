@@ -50,6 +50,13 @@ inputType:string='checkbox'
     <button style="background-color: blueviolet;"(click)="showAlert('payment invoked')">Show Alert</button>
     <input type="text" >
       </div>
-      
+      <div>
+        <button>Update State </button> 
+        <select [(ngModel)]="stateName" >
+            <option value="">select</option>
+            <option value="goa">goa</option>
+            <option value="delhi">delhi</option>
+            <option value="kerala">kerala</option>
+        </select>
   
 </div>
