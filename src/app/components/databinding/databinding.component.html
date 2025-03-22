@@ -1,1 +1,50 @@
-<p>databinding works!</p>
+
+<div >
+    rollNo:number=90;
+isIndian:boolean =true;
+admissionDate:Date= new Date()
+inputType:string='checkbox'
+<h1>{{name}}</h1>
+
+<table style="background-color: gray; border: 2px solid black;">
+    <h2>Cousrse Name: {{courseName}}</h2>
+    <tr>
+      <td style="border: 1px solid black;">Name</td>
+      <td style="border: 1px solid black;">{{ name }}</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black;">Roll No</td>
+      <td style="border: 1px solid black;">{{ rollNo }}</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black;">Is Indian</td>
+      <td style="border: 1px solid black;">
+        {{ isIndian ? 'Yes' : 'No' }}
+      </td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black;">Admission Date</td>
+      <td style="border: 1px solid black;">
+        {{ admissionDate  }}
+      </td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid black;">Select state</td>
+        <td style="border: 1px solid black;">{{stateName}}</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black;">Input Type</td>
+      <td style="border: 1px solid black;">
+        
+      </td>
+
+
+    </tr>
+
+   
+
+  </table>
+ 
+
+  
+</div>
