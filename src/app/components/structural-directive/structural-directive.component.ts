@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class StructuralDirectiveComponent {
   isWatching:boolean=true;
-
+  isToggle:boolean=true;
   constructor() { 
    
   }
@@ -18,5 +18,9 @@ export class StructuralDirectiveComponent {
   }
   showWatching(){
     this.isWatching=true
+  };
+
+  toggle(){
+    this.isToggle=!this.isToggle
   }
 }

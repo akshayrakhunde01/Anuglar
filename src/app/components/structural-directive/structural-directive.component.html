@@ -11,3 +11,21 @@
 
 <button style="background-color: blueviolet;" (click)="hideWatching()">hide watching</button>
 <button style="background-color: brown;" (click)="showWatching()">show watching</button>
+<div>
+    <h1><b style="background-color: red;">b</b> </h1>
+</div>
+
+<div >
+<h3
+*ngIf="isToggle"
+style="background-color: rgb(121, 121, 187);
+width: auto;
+margin: auto;
+padding: 10px;
+max-width: 200px;
+"
+>TOggle SHOW</h3>
+</div>
+
+<button (click)="toggle()"
+style="background-color: red;">toggleSHow/Hide</button>
