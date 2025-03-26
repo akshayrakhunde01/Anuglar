@@ -59,6 +59,33 @@ style="background-color: red;">toggleSHow/Hide</button>
     <option value="" style="padding: 8px 15px; font-size: 16px; color: #333; background-color: #f4f4f4;">Select</option>
     <option *ngFor="let state of stateNames" [value]="state" style="padding: 8px 15px; font-size: 16px; color: #333; background-color: #f4f4f4;">{{ state }}</option>
 </select>
-
-
 </div>
+<p style="background-color: rgb(180, 156, 202);">ngFor for object</p>
+
+<!-- <div style="background-color: rgb(110, 116, 114);">
+
+    <div style="background-color: rgb(135, 164, 154); padding: 10px;">
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr style="background-color: #070f08; color: white;">
+                    <th style="padding: 8px; text-align: left;">sr no</th>
+                    <th style="padding: 8px; text-align: left;">name</th>
+                    <th style="padding: 8px; text-align: left;">city</th>
+                    <th style="padding: 8px; text-align: left;">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let studData of studentData; let srNo=index" style="border-bottom: 1px solid #ddd;">
+                    <td style="padding: 8px;">{{srNo+1}}</td>
+                    <td style="padding: 8px;">{{studData.name}}</td>
+                    <td style="padding: 8px;">{{studData.city}}</td>
+                    <td style="padding: 8px;">
+                        <span *ngIf="studData.status=='Active'">In</span>
+                        <span *ngIf="studData.status=='Inactive'">Out</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div> -->
