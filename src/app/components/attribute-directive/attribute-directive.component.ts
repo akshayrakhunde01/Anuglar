@@ -11,6 +11,6 @@ import { FormsModule } from '@angular/forms';
 export class AttributeDirectiveComponent {
  constructor(){}
 
- changeColor:string='green'
+ changeColor:string=''
  
 }
