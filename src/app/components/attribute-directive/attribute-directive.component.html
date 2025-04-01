@@ -4,6 +4,11 @@ color: rgb(190, 197, 204);">attribute-directive works!>>>>>>>>>>>>></p>
 <div>
     <h2 class=" color:black">DIV 1</h2>
 
-    <button> green</button>
-    <button> yello</button>
+    <label for="">Enter Color Name <input type="text"  [(ngModel)]="changeColor"> </label>
+</div>
+
+<div >
+    <h3 [ngStyle]="{'background-color': changeColor}">
+        this for changing class color
+    </h3>
 </div>

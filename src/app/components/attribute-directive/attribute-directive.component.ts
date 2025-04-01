@@ -1,22 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-attribute-directive',
-  imports: [CommonModule],
+  imports: [CommonModule,FormsModule],
   templateUrl: './attribute-directive.component.html',
   styleUrl: './attribute-directive.component.css'
 })
 export class AttributeDirectiveComponent {
  constructor(){}
 
- chanageColor:string=''
+ changeColor:string='green'
  
- changeColorDiv1TOGreen(){
-  this.chanageColor='green'
- }
-
- changeColorDiv1TOYellow(){
-  this.chanageColor='yellow'
- }
 }
