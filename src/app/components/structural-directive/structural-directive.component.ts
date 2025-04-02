@@ -12,7 +12,7 @@ export class StructuralDirectiveComponent {
   isToggle:boolean=true;
   stateNames:string[]=['maharashtra','karnataka','tamilnadu','kerala','andhra pradesh','telangana','madhya pradesh','gujarat','rajasthan','uttar pradesh','bihar','jharkhand','west bengal','odisha','assam','arunachal pradesh','nagaland','manipur','mizoram','tripura','meghalaya','sikkim','goa','haryana','punjab','jammu and kashmir','uttarakhand','himachal pradesh','chhattisgarh','jharkhand','telangana','andaman and nicobar islands','chandigarh','dadra and nagar haveli','daman and diu','lakshadweep','delhi','puducherry']
   studentData: any = [
-    { srNo: 1, name: "John Doe", city: "New York", status: "Active" },
+    { srNo: 1, name: "John Doe", city: "NewW York", status: "Active" },
     { srNo: 2, name: "Jane Smith", city: "Los Angeles", status: "Inactive" },
     { srNo: 3, name: "Michael Brown", city: "Chicago", status: "Active" },
     { srNo: 4, name: "Emily Davis", city: "Houston", status: "Active" },
