@@ -6,9 +6,10 @@ import { AttributeDirectiveComponent } from './components/attribute-directive/at
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,DatabindingComponent,StructuralDirectiveComponent,AttributeDirectiveComponent],
+  imports: [RouterOutlet,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
+  // DatabindingComponent,StructuralDirectiveComponent,AttributeDirectiveComponent
 })
 export class AppComponent {
   title = 'angukarP1';
