@@ -1,80 +1,80 @@
 <body style="background-color: #586b89;">
-    
-    <div class="container bg-blak min-vh-100 d-flex justify-content-center align-items-center">
-
-    <form class="p-4 rounded shadow " style="max-width: 500px; width: 100%; background-color: lightslategrey;">
-      <h4 class="text-center mb-4">Registration Form</h4>
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+      <form [formGroup]="registrationForm" class="p-4 rounded shadow" style="max-width: 500px; width: 100%; background-color: lightslategrey;">
+        <h4 class="text-center mb-4 text-white">Registration Form</h4>
   
-      <div class="row mb-3">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="First Name">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Last Name">
-        </div>
-      </div>
-  
-      <div class="mb-3">
-        <input type="email" class="form-control" placeholder="Email">
-      </div>
-  
-      <div class="row mb-3">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="username">
-        </div>
-        <div class="col">
-          <input type="date" class="form-control">
-        </div>
-      </div>
-  
-      <div class="mb-3">
-        <button type="button" class="btn btn-danger w-100">Create a Username</button>
-      </div>
-  
-      <div class="mb-3">
-        <label class="form-label d-block">Gender</label>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gender" id="male" checked>
-          <label class="form-check-label" for="male">male</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gender" id="female">
-          <label class="form-check-label" for="female">Female</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="gender" id="preferNot">
-          <label class="form-check-label" for="preferNot">prefer not to say</label>
-        </div>
-      </div>
-  
-      <div class="mb-3">
-        <label class="form-label">Address</label>
-        <input type="text" class="form-control mb-2" placeholder="Street address">
-        
-        <div class="row mb-2">
+        <div class="row mb-3">
           <div class="col">
-            <select class="form-select">
-              <option selected>Country</option>
-            </select>
+            <input formControlName="firstName" type="text" class="form-control" placeholder="First Name">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="City">
+            <input formControlName="lastName" type="text" class="form-control" placeholder="Last Name">
           </div>
         </div>
   
-        <div class="row">
+        <div class="mb-3">
+          <input formControlName="email" type="email" class="form-control" placeholder="Email">
+        </div>
+  
+        <div class="row mb-3">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Region">
+            <input formControlName="username" type="text" class="form-control" placeholder="Username">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Postal code">
+            <input formControlName="dateOfBirth" type="date" class="form-control">
           </div>
         </div>
-      </div>
   
-      <button type="submit" class="btn btn-danger w-100">Submit</button>
-    </form>
-  </div>
+        <div class="mb-3">
+          <button type="button" class="btn btn-danger w-100">Create a Username</button>
+        </div>
   
-    
+        <div class="mb-3">
+          <label class="form-label d-block text-white">Gender</label>
+          <div class="form-check form-check-inline">
+            <input formControlName="gender" class="form-check-input" type="radio" value="male" name="gender" id="male">
+            <label class="form-check-label text-white" for="male">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input formControlName="gender" class="form-check-input" type="radio" value="female" name="gender" id="female">
+            <label class="form-check-label text-white" for="female">Female</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input formControlName="gender" class="form-check-input" type="radio" value="preferNot" name="gender" id="preferNot">
+            <label class="form-check-label text-white" for="preferNot">Prefer not to say</label>
+          </div>
+        </div>
+  
+        <div class="mb-3">
+          <label class="form-label text-white">Address</label>
+          <input formControlName="streetAddress" type="text" class="form-control mb-2" placeholder="Street address">
+  
+          <div class="row mb-2">
+            <div class="col">
+              <select formControlName="country" class="form-select">
+                <option value="">Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <!-- Add more countries as needed -->
+              </select>
+            </div>
+            <div class="col">
+              <input formControlName="city" type="text" class="form-control" placeholder="City">
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col">
+              <input formControlName="region" type="text" class="form-control" placeholder="Region">
+            </div>
+            <div class="col">
+              <input formControlName="postalCode" type="text" class="form-control" placeholder="Postal Code">
+            </div>
+          </div>
+        </div>
+  
+        <button type="submit" class="btn btn-danger w-100">Submit</button>
+      </form>
+    </div>
   </body>
+  
