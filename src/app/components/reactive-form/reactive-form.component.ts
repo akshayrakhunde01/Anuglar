@@ -22,13 +22,15 @@ export class ReactiveFormComponent implements OnInit {
       email: new FormControl(null),
       username: new FormControl(''),
       dateOfBirth: new FormControl(''),
-      gender: new FormControl(''),
+      gender: new FormControl('male'),
       streetAddress: new FormControl(''),
-      country: new FormControl(''),
+      country: new FormControl('India'),
       city: new FormControl(''),
       region: new FormControl(''),
       postalCode: new FormControl('')
     });
   }
-  
+  onSubmitForm(){
+    console.log(this.registrationForm.value)
+  }
 }
