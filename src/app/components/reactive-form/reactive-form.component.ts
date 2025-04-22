@@ -20,6 +20,17 @@ export class ReactiveFormComponent implements OnInit {
     this.registrationForm = new FormGroup({
       firstName: new FormControl(''),
       lastName: new FormControl(''),
+      email:new FormControl(null),
+      username:new FormControl(''),
+      DateOfBirth:new FormControl(''),
+      gender: new FormControl(''),
+      streetAddress:new FormControl(''),
+      country:new  FormControl(''),
+      city:new FormControl(''),
+      region:new FormControl(''),
+      postalCode:new FormControl(''),
+      createAuserName:new FormControl(''),
+      submit:new FormControl('')
     });
   }
 }
