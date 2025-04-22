@@ -1,12 +1,13 @@
 
 import { Routes } from '@angular/router';
-import { StructuralDirectiveComponent } from './components/structural-directive/structural-directive.component';
 import { AttributeDirectiveComponent } from './components/attribute-directive/attribute-directive.component';
 import { DatabindingComponent } from './components/databinding/databinding.component';
 import { TemplateFromComponent } from './components/template-from/template-from.component';
+import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
 
 export const routes: Routes = [
     {path:"DatabindingComponent", component:DatabindingComponent},
     {path:'attribute', component:AttributeDirectiveComponent},
-    {path:'template-form',component:TemplateFromComponent}
+    {path:'template-form',component:TemplateFromComponent},
+    {path:'reactive-form',component:ReactiveFormComponent}
 ];
