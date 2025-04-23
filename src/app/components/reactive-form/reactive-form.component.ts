@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-form',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule,CommonModule,],
   templateUrl: './reactive-form.component.html',
   styleUrl: './reactive-form.component.css',
 })
@@ -31,6 +32,14 @@ export class ReactiveFormComponent implements OnInit {
     });
   }
   onSubmitForm(){
-    console.log(this.registrationForm.controls)
+    if (this.registrationForm.valid) {
+      console.log('Form Data:', this.registrationForm.value);
+    } else {
+      this.registrationForm.markAllAsTouched(); // show errors
+    }
+  }
+
+  get f() {
+    return this.registrationForm.controls;
   }
 }
