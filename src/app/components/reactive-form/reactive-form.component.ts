@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
@@ -21,7 +21,7 @@ export class ReactiveFormComponent implements OnInit {
       firstName: new FormControl('',Validators.required),
       lastName: new FormControl('',Validators.required),
       email: new FormControl(null,[Validators.required,Validators.email]),
-      username: new FormControl(''),
+      username: new FormControl('abcd01'),
       dateOfBirth: new FormControl(''),
       gender: new FormControl('male'),
       streetAddress: new FormControl(''),
