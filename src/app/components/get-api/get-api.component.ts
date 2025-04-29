@@ -21,4 +21,5 @@ export class GetAPIComponent {
       console.log('error while fetching the all users')
      })
   }
+  
 }
