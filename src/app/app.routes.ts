@@ -5,11 +5,13 @@ import { DatabindingComponent } from './components/databinding/databinding.compo
 import { TemplateFromComponent } from './components/template-from/template-from.component';
 import { ReactiveFormComponent } from './components/reactive-form/reactive-form.component';
 import { ReactiveFormValidationComponent } from './components/reactive-form-validation/reactive-form-validation.component';
+import { GetAPIComponent } from './components/get-api/get-api.component';
 
 export const routes: Routes = [
     {path:"DatabindingComponent", component:DatabindingComponent},
     {path:'attribute', component:AttributeDirectiveComponent},
     {path:'template-form',component:TemplateFromComponent},
     {path:'reactive-form',component:ReactiveFormComponent},
-    {path:'reactive-form-Validation',component:ReactiveFormValidationComponent}
+    {path:'reactive-form-Validation',component:ReactiveFormValidationComponent},
+    {path:'app-get-api',component:GetAPIComponent}
 ];
