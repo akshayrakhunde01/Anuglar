@@ -21,5 +21,16 @@ export class GetAPIComponent {
       console.log('error while fetching the all users')
      })
   }
-  
+
+  getAllCustomers(){
+    this.http.get('/api/RealEstate/GetAllCustomers').subscribe({
+      next: (result: any) => {
+        this.customers = result.data;
+      },
+      error: (error) => {
+        console.log('error occurred while fetching the all customer data', error);
+      }
+    });
+  }
+
 }

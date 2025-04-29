@@ -1,0 +1,9 @@
+{
+    "/api": {
+      "target": "https://projectapi.gerasim.in",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }
+  

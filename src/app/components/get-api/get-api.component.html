@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="col-2"> 
-        <button class="btn btn-success" (click)="getAllUsers()">GetAll Users</button>
+        <button class="btn btn-success" (click)="getAllUsers()">Get All Users</button>
     </div>
     <div class="col-3">
         <select name="" class="form-select" id="">
@@ -11,4 +11,20 @@
             }
         </select>
     </div>
+  
+</div>
+
+<div class="row mt-3">
+  <!-- All Cutomers -->
+
+  <div class="col-2">
+<button class="btn btn-success" (click)="getAllCustomers()"> Get All Cutomers</button>
+  </div>
+  <div class="col-3">
+<select name="" class="form-select" id="">
+    @for (cutomer of customers; track $index) {
+        <option value="" >{{cutomer.userName}}</option>
+    }
+</select>
+  </div>
 </div>
