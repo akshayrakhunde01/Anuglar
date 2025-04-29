@@ -1,18 +1,45 @@
 
 <form class="row g-3 needs-validation" novalidate [formGroup]="userForm" (ngSubmit)="onSubmit()">
-    <div class="col-md-4" >
-      <label for="validationCustom01" class="form-label" >First name</label>
-      <input type="text" formControlName="firstName" class="form-control" id="validationCustom01" value="Mark" required>
-      <div  class="text-danger" *ngIf="userForm.controls['firstName'].invalid && (userForm.controls['firstName'].touched )" style="color: brown;">
-        required filed
-      </div>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input
+      type="text"
+      formControlName="firstName"
+      class="form-control"
+      id="validationCustom01"
+      required
+    >
+    
+    <div
+      class="text-danger"
+      *ngIf="userForm.controls['firstName'].errors?.['required'] && userForm.controls['firstName'].touched"
+      style="color: brown;"
+    >
+      Required field
     </div>
+  
+    <div
+      class="text-danger"
+      *ngIf="userForm.controls['firstName'].errors?.['minlength'] && userForm.controls['firstName'].touched"
+    >
+      Name must be at least 3 characters long
+    </div>
+  </div>
+  
     <div class="col-md-4">
       <label for="validationCustom02" class="form-label">Last name</label>
       <input type="text" formControlName="lastName" class="form-control" id="validationCustom02" value="Otto" required>
-      <div  class="valid-feedback">
-        Looks good!
+      <div  class="text-danger" *ngIf="userForm.controls['lastName'].errors?.['required']  && userForm.controls['lastName'].touched" >
+        Required Field
       </div>
+      
+      <div
+  class="text-danger"
+  *ngIf="userForm.controls['lastName'].errors?.['minlength'] && userForm.controls['lastName'].touched"
+>
+  Last name must be at least 3 characters long
+</div>
+
     </div>
     <div class="col-md-4">
       <label for="validationCustomUsername" class="form-label">Username</label>

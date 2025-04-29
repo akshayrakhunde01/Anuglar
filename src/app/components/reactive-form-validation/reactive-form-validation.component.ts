@@ -14,8 +14,8 @@ export class ReactiveFormValidationComponent {
 
   constructor(){
     this.userForm=new FormGroup({
-      firstName:new FormControl("",[Validators.required]),
-      lastName:new FormControl(""),
+      firstName:new FormControl("",[Validators.required,Validators.minLength(3)]),
+      lastName:new FormControl("",[Validators.required,Validators.minLength(3)]),
       userName: new FormControl(""),
       city:new FormControl(""),
       state:new FormControl("Maharashtra"),
