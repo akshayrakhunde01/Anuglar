@@ -5,5 +5,17 @@
       "changeOrigin": true,
       "logLevel": "debug"
     }
-  }
+  ,
   
+  "/api-free": {
+    "target": "https://freeapi.miniprojectideas.com/api",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/api-free": ""
+    }
+  }
+    
+  
+}

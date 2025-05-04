@@ -1,1 +1,54 @@
-<p>post-api-form works!</p>
+<div class="row">
+    <!-- GET Form -->
+    <div class="col-md-8">
+      <h4 ><button (click)="getCarList()">Fetch Cars</button></h4>
+     
+      <table class="table table-bordered table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th>Car No</th>
+            <th>Brand</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Color</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <!-- <th>{{carData.data.id}}</th>
+            <th>{{carData.data.brand}}</th>
+            <th>{{carData.data.model}}</th>
+            <th>{{carData.data.year}}</th>
+            <th>{{carData.data.color}}</th> -->
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  
+    <!-- POST Form -->
+    <div class="col-md-4">
+      <h4>POST Form (Add New Car)</h4>
+      <form action="/submit-data" method="POST">
+        <div class="mb-3">
+          <label for="carNo" class="form-label">Car Number</label>
+          <input type="text" class="form-control" id="carNo" name="car_no" placeholder="e.g. MH12AB1234">
+        </div>
+        <div class="mb-3">
+          <label for="model" class="form-label">Model</label>
+          <input type="text" class="form-control" id="model" name="model">
+        </div>
+        <div class="mb-3">
+          <label for="owner" class="form-label">Owner Name</label>
+          <input type="text" class="form-control" id="owner" name="owner">
+        </div>
+        <div class="mb-3">
+          <label for="engine" class="form-label">Engine Type</label>
+          <input type="text" class="form-control" id="engine" name="engine">
+        </div>
+        <button type="submit" class="btn btn-success">Add Car</button>
+      </form>
+    </div>
+  </div>
+  
